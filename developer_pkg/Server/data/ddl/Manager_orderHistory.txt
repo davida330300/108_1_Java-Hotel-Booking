@@ -1,0 +1,15 @@
+CREATE TABLE `OrderHistory` (
+  `Order_ID` int(11) NOT NULL,
+  `Member_ID` int(11) DEFAULT NULL,
+  `Hotel_ID` int(11) DEFAULT NULL,
+  `Single` int(11) DEFAULT NULL,
+  `Double` int(11) DEFAULT NULL,
+  `Quad` int(11) DEFAULT NULL,
+  `CheckIn` datetime DEFAULT NULL,
+  `CheckOut` datetime DEFAULT NULL,
+  `Price` int(11) DEFAULT NULL,
+  `CS_ID` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Order_ID`),
+  KEY `Member_ID_fk3_idx` (`Member_ID`),
+  CONSTRAINT `Member_ID_fk3` FOREIGN KEY (`Member_ID`) REFERENCES `member` (`Member_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8

@@ -1,0 +1,8 @@
+CREATE TABLE `Room` (
+  `Hotel_ID` int(11) NOT NULL,
+  `RoomType` varchar(45) NOT NULL,
+  `Price` int(11) DEFAULT NULL,
+  `Number` int(11) DEFAULT NULL,
+  KEY `Hotel_ID` (`Hotel_ID`),
+  CONSTRAINT `Hotel_ID_fk1` FOREIGN KEY (`Hotel_ID`) REFERENCES `hotel` (`Hotel_ID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8

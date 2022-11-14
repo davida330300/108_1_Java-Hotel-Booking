@@ -1,0 +1,5 @@
+CREATE TABLE `Advertiser` (
+  `Advertiser_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `CompanyName` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Advertiser_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8

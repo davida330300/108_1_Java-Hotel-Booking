@@ -1,0 +1,11 @@
+CREATE TABLE `Member` (
+  `Member_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `RealName` varchar(45) NOT NULL,
+  `UserName` varchar(45) DEFAULT NULL,
+  `Password` varchar(45) DEFAULT NULL,
+  `Membership` varchar(45) DEFAULT NULL,
+  `Email` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Member_ID`),
+  UNIQUE KEY `UserName_UNIQUE` (`UserName`),
+  UNIQUE KEY `Email_UNIQUE` (`Email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
